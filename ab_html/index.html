@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Address Book | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <h1>Ajax Address Book</h1>
+      </div>
+      <div class="large-6 columns">
+        <a class="add-btn button small" style="float: right;" data-open="myModal">Add Contact</a>
+        <div id="myModal" class="reveal" data-reveal>
+          <h2>Add Contact</h2>
+          <form>
+            <div class="row">
+              <div class="large-6 columns">
+                <label>First Name : 
+                <input type="text" placeholder="Enter First Name">
+                </label>
+              </div>
+              <div class="large-6 columns">
+                <label>Last Name : 
+                <input type="text" placeholder="Enter Last Name">
+                </label>
+              </div>
+            </div>
+            <div class="large-4 columns">
+              <label>Email : 
+              <input type="email" placeholder="Enter E-mail Address">
+              </label>
+            </div>
+            <div class="large-4 columns">
+              <label>Contact Group : 
+              <select>
+                <option value="husker">Family</option>
+                <option value="starbuck">Friends</option>
+                <option value="hotdog">Business</option>
+              </select>
+              </label>
+            </div>
+            <div class="large-4 columns">
+                <label>Phone: 
+                  <input type="text" placeholder="Enter Phone Number">
+                </label>
+              </div>
+            <div class="row">
+              <div class="large-6 columns">
+                <label>Address 1 : 
+                  <input type="text" placeholder="Enter Address 1">
+                </label>
+              </div>
+              <div class="large-6 columns">
+                <label>Address 2 : 
+                  <input type="text" placeholder="Enter Address 2">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+                <label>State : 
+                  <select>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CT">Chattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu Kashmir</option>
+                    <option value="JH">Jharkand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TS">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="UK">Uttarakhand</option>
+                    <option value="WB">West Bengal</option>
+                  </select>
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <label>City: 
+                  <input type="text" placeholder="Enter City">
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <label>Zipcode: 
+                  <input type="text" placeholder="Enter Zipcode">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Notes : 
+                  <textarea placeholder="Enter optional Notes"></textarea>
+                </label>
+              </div>
+            </div>
+            <input type="submit" class="add-btn button small" style="float: right;" value="Submit">
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Name</th>    
+              <th width="130">Phone</th>    
+              <th width="200">E-mail</th>    
+              <th width="250">Address</th>    
+              <th width="100">Group</th>    
+              <th width="150">Action</th>    
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="contact.html">Balpreet Singh</a></td>
+              <td>8527585550</td>
+              <td>balpreet.m23@gmail.com</td>
+              <td>Safdarjung Enclave</td>
+              <td>Family</td>
+              <td>
+                <div class="button-group small">
+                 <a href="#" class="button" data-open="myModal">Edit</a>
+                 <a href="#" class="button [secondary alert success]" >Delete</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="contact.html">Amrit Singh</a></td>
+              <td>9555719523</td>
+              <td>amrit.m23@gmail.com</td>
+              <td>Safdarjung Enclave</td>
+              <td>Family</td>
+              <td>
+                <div class="button-group small">
+                 <a href="#" class="button" data-open="myModal">Edit</a>
+                 <a href="#" class="button [secondary alert success]" >Delete</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="contact.html">Bhaskar Sharma</a></td>
+              <td>9999190408</td>
+              <td>bhaskarsharma@gmail.com</td>
+              <td>Safdarjung Enclave</td>
+              <td>Friends</td>
+              <td>
+                <div class="button-group small">
+                 <a href="#" class="button" data-open="myModal">Edit</a>
+                 <a href="#" class="button [secondary alert success]" >Delete</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
